@@ -1,10 +1,13 @@
 .intro {
   &__inner {
+    position: relative;
+    display: flex;
     padding: 11rem 0 12rem 0;
     min-height: 47rem;
+    background-image: url("../images/intro-bg1.png");
     background-repeat: no-repeat;
-    background-position: center top;
-    background-size: cover;
+    background-position: right bottom;
+    background-size: contain;
     border-bottom: 1px solid rgba($gray, .3);
   }
 
@@ -29,6 +32,21 @@
   }
 
   &__photo {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    height: 100%;
     width: 50%;
+
+    img {
+      @extend .img-contain;
+    }
+  }
+
+  &__actions {
+    .btn + .btn {
+      margin-left: 1.5rem;
+    }
   }
 }

@@ -12,6 +12,7 @@
     width: 4.1rem;
     height: 4.1rem;
     text-align: center;
+    transition: transform .1s linear;
 
     i {
       font-size: 2.4rem;
@@ -41,6 +42,10 @@
 
     &--twitter {
       background-color: #56acef;
+    }
+
+    &:hover {
+      transform: translateY(-2px);
     }
   }
 }

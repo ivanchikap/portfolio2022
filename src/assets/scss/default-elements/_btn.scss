@@ -1,18 +1,17 @@
 .btn {
   display: inline-block;
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: inherit;
   line-height: 0.8;
   text-transform: uppercase;
   letter-spacing: 0.7px;
-  border: 2px solid $black;
   @extend .text-overflow;
   transition: all .2s linear;
 
   &--small {
     font-size: 1.4rem;
-    padding: 1.1rem 2.2rem;
-    border-radius: 2rem;
+    padding: 0.79em 1.57em;
+    border-radius: 1.43em;
     font-weight: 700;
   }
 
@@ -29,23 +28,37 @@
   }
 
   &--default {
-    padding: 2rem 2.6rem;
+    min-width: 17rem;
+    padding: 1.17em 1.6em;
     font-size: 1.6rem;
     font-weight: 400;
-    border-radius: 2.5rem;
+    border-radius: 1.6em;
   }
 
   &--black {
     color: $white;
     box-shadow: 3px 2px 8px rgba(0, 0, 0, 0.25);
     background-color: $black;
-    border: 1px solid transparent;
+    border: 1px solid $black;
 
     &:hover {
-      color: gray;
+      color: $gray;
       box-shadow: none;
       background-color: transparent;
       border: 1px solid $gray;
+    }
+  }
+
+  &--transparent-gray {
+    color: $gray;
+    background-color: transparent;
+    border: 1px solid $gray;
+
+    &:hover {
+      color: $white;
+      box-shadow: 3px 2px 8px rgba(0, 0, 0, 0.25);
+      background-color: $black;
+      border-color: black;
     }
   }
 }
