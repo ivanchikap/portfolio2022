@@ -1,0 +1,23 @@
+.news {
+  padding: 22rem 0 12rem 0;
+  
+  &__header {
+    max-width: 80%;
+    margin: 0 auto 5rem auto;
+    text-align: center;
+  }
+
+  &__title {
+    color: #2b2a2c;
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  &__text {
+    color: $gray-text;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.6;
+  }
+}
