@@ -7,6 +7,10 @@
     display: flex;
     width: 33.3333%;
     padding: 0 1.5rem;
+
+    &:not(:nth-child(-n + 3)) {
+      margin-top: 3rem;
+    }
   }
 
   &__item {
@@ -16,10 +20,17 @@
   &__header {
     position: relative;
     width: 100%;
+    max-width: 37rem;
     height: 25.7rem;
+    overflow: hidden;
 
     img {
       @extend .img-cover;
+      transition: transform .2s linear;
+
+      &:hover {
+        transform: scale(1.1);
+      }
     }
   }
 
@@ -54,6 +65,12 @@
     line-height: 0.8;
     text-transform: uppercase;
     letter-spacing: 0.9px;
+  }
+  
+  &__title-link {
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   &__cat {

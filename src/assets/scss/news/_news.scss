@@ -18,6 +18,21 @@
     color: $gray-text;
     font-size: 1.8rem;
     font-weight: 300;
-    line-height: 1.6;
+    line-height: 1.7;
+  }
+
+  &__link {
+    display: block;
+    margin-left: auto;
+    margin-top: 1.6rem;
+    color: $gray-text;
+    font-size: 1.4rem;
+    text-align: right;
+    text-decoration: underline;
+    letter-spacing: 0.7px;
+
+    &:hover {
+      text-decoration: none;
+    }
   }
 }
