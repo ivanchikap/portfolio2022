@@ -1,5 +1,7 @@
 .nav {
   margin-left: 1.4rem;
+  display: flex;
+  align-items: center;
 
   &__link {
     position: relative;
