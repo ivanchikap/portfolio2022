@@ -1,0 +1,58 @@
+.timeline {
+  display: flex;
+  margin: 7rem auto;
+  width: 100%;
+  max-width: 76.8rem;
+
+  &__col {
+    width: 50%;
+    text-align: right;
+    padding-right: 4.7rem;
+    
+    &:last-child {
+      text-align: left;
+      padding-left: 4.7rem;
+      border-left: 1px solid $gray;
+    }
+  }
+
+  &__title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
+    margin-bottom: 3.8rem;
+  }
+
+  &__item {
+    & + & {
+      margin-top: 3.8rem;
+    }
+  }
+
+  &__date {
+    display: block;
+    font-size: 1.4rem;
+    line-height: 1.57;
+    text-decoration: underline;
+    margin-bottom: 1.3rem;
+  }
+
+  &__subtitle {
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+
+  &__position {
+    font-size: 1.4rem;
+    font-style: italic;
+    line-height: 1.57;
+  }
+
+  &__text {
+    margin-top: 0.8rem;
+    color: $gray;
+    font-weight: 300;
+    line-height: 1.5;
+  }
+}
