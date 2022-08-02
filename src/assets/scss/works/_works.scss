@@ -1,6 +1,10 @@
 .works {
   margin: 4rem 0;
 
+  @include mobile {
+    margin: 3rem 0;
+  }
+
   &__nav {
     display: flex;
     justify-content: center;

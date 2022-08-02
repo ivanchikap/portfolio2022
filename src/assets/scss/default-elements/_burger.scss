@@ -8,11 +8,12 @@
   color: transparent;
 
   position: absolute;
-  top: 50%;
-  left: 1.5rem;
+  top: 46%;
+  right: 1.5rem;
   transform: translateY(-50%);
   background: none;
   border: none;
+  z-index: 11;
 
   &::before, &::after, span {
     display: block;

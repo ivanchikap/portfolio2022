@@ -1,0 +1,44 @@
+.contact {
+  display: flex;
+
+  &__left {
+    padding: 3rem;
+    width: 48%;
+  }
+
+  &__right {
+    width: 52%;
+    max-height: 100%;
+    background-color: $gray;
+    overflow: hidden;
+
+    img {
+      @extend .img-cover;
+    }
+  }
+
+  &__info {
+    margin: 3rem 0 4.5rem 0;
+  }
+
+  &__info-item {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: 300;
+
+    & + & {
+      margin-top: 1rem;
+    }
+  }
+
+  &__info-icon {
+    margin-right: 0.8rem;
+  }
+  
+  &__info-link {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

@@ -1,14 +1,37 @@
 .about {
   margin: 12.6rem 0;
 
+  @include laptop {
+    margin: 10rem 0;
+  }
+
+  @include tablet {
+    margin: 8rem 0;
+  }
+
+  @include mobile-large {
+    margin: 6rem 0;
+  }
+
+  @include mobile {
+    margin: 4rem 0;
+  }
+
   &__inner {
     display: flex;
+    flex-wrap: wrap;
     width: 91%;
+    margin: 0 auto;
   }
 
   &__photo {
     position: relative;
     width: 50%;
+
+    @include tablet {
+      width: 74%;
+      margin: 0 auto;
+    }
 
     img {
       position: relative;
@@ -23,15 +46,32 @@
       left: 1rem;
       bottom: 0;
       z-index: 1;
+      max-width: 80%;
+      max-height: 80%;
       width: 41.3rem;
       height: 41.3rem;
       background-color: #efefef;
+
+      @include laptop {
+        width: 36.3rem;
+        height: 36.3rem;
+      }
     }
   }
 
   &__content {
     padding: 3.7rem 0 3.7rem 3.2rem;
     width: 50%;
+
+    @include laptop {
+      padding: 2.7rem 0 2.7rem 2.2rem;
+    }
+
+    @include tablet {
+      width: 100%;
+      padding: 2rem 0 0 0;
+      text-align: center;
+    }
   }
 
   &__title {
@@ -41,6 +81,18 @@
     line-height: 0.8;
     text-transform: uppercase;
     margin-bottom: 2rem;
+
+    @include laptop {
+      font-size: 4rem;
+    }
+
+    @include mobile-large {
+      font-size: 3rem;
+    }
+    @include mobile {
+      font-size: 2.6rem;
+    }
+
   }
 
   &__bigtitle {
@@ -48,9 +100,20 @@
     font-size: 9rem;
     font-weight: 700;
     line-height: 0.8;
-    text-align: left;
     text-transform: uppercase;
     margin-bottom: 1.6rem;
+
+    @include laptop {
+      font-size: 7.2rem;
+    }
+
+    @include mobile-large {
+      font-size: 6rem;
+    }
+
+    @include mobile {
+      font-size: 5rem;
+    }
   }
 
   &__text {
@@ -58,12 +121,37 @@
     font-size: 1.2rem;
     line-height: 2;
     font-weight: 300;
+
+    @include mobile {
+      line-height: 1.6;
+    }
   }
 
   &__actions {
     margin-top: 5.2rem;
+
+    .btn {
+      @include mobile {
+        width: 100%;
+        max-width: 32rem;
+      }
+    }
+
     .btn + .btn {
       margin-left: 1.5rem;
+
+      @include mobile {
+        margin-top: 1rem;
+        margin-left: 0;
+      }
+    }
+
+    @include mobile-large {
+      margin-top: 4rem;
+    }
+
+    @include mobile {
+      margin-top: 2rem;
     }
   }
 }

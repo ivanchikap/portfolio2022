@@ -1,14 +1,23 @@
 .sidebar {
   position: fixed;
+  top: 8rem;
+  right: 0;
   width: 300px;
-  height: calc(100vh - 4rem);
+  height: calc(100vh - 8rem);
   padding: 2rem;
 
-  z-index: 4;
+  z-index: 100;
 
-  background-color: #ccc;
-  transform: translateX(-101%);
+  background-color: #fff;
+  transform: translateX(101%);
   transition: transform .3s linear;
+
+  box-shadow: -4px 0 8px rgba($white, .2);
+
+  @include tablet {
+    top: 7.4rem;
+    height: calc(100vh - 7.4rem);
+  }
 
   .show-sidebar & {
     transform: translateX(0);

@@ -32,14 +32,14 @@ title: portfolio
                 </ul>
                 <!--/social-->
                 <div class="intro__actions">
-                    <a class="btn btn--default btn--transparent-gray" href="#">Hire Me</a>
-                    <a class="btn btn--default btn--transparent-gray" href="#">See My Resume</a>
+                    <a class="btn btn--default btn--transparent-gray" href="#" data-modal="#modalHireMe">Hire Me</a>
+                    <a class="btn btn--default btn--transparent-gray" href="#" data-modal="#modalResume">See My Resume</a>
                 </div>
                 <!--/intro__actions-->
             </div>
             <!--/intro__content-->
            <div class="intro__photo">
-               <img src="assets/images/designer_photo.jpg" alt="designer photo">
+               <img src="assets/images/photo.png" alt="designer photo">
            </div>
             <!--/intro__photo-->
         </div>
@@ -51,20 +51,20 @@ title: portfolio
 <div class="works">
     <div class="container">
         <div class="works__nav">
-            <a href="#" class="works__nav-link">All</a>
-            <a href="#" class="works__nav-link">App</a>
-            <a href="#" class="works__nav-link">Website</a>
-            <a href="#" class="works__nav-link">Interaction</a>
+            <a href="#" class="works__nav-link" data-filter="all">All</a>
+            <a href="#" class="works__nav-link" data-filter="app">App</a>
+            <a href="#" class="works__nav-link" data-filter="website">Website</a>
+            <a href="#" class="works__nav-link" data-filter="interaction">Interaction</a>
         </div>
         <!--/works__nav-->
-        <div class="portfolio">
-            <div class="portfolio__col">
-                <div class="work">
+        <div class="portfolio" id="portfolio">
+            <div class="portfolio__col" data-cat="app">
+                <div data-modal="#modalProject1" class="work">
                     <a href="#" class="work__img">
-                        <img src="https://place-hold.it/370x300" alt="portfolio img">
+                        <img src="assets/images/project1.jpg" alt="portfolio img">
                     </a>
                     <div class="work__content">
-                        <p class="work__cat">Category</p>
+                        <p class="work__cat">Category app</p>
                         <div class="work__content-bottom">
                             <a href="#" class="work__title">Project title</a>
                             <time datetime="2018-11-22 19:00" class="work__date">2018</time>
@@ -73,13 +73,13 @@ title: portfolio
                 </div>
             </div>
             <!--/portfolio__col-->
-            <div class="portfolio__col">
-                <div class="work">
+            <div class="portfolio__col" data-cat="app">
+                <div data-modal="#modalProject2" class="work">
                     <a href="#" class="work__img">
-                        <img src="https://place-hold.it/370x300" alt="portfolio img">
+                        <img src="assets/images/project2.jpg" alt="portfolio img">
                     </a>
                     <div class="work__content">
-                        <p class="work__cat">Category</p>
+                        <p class="work__cat">Category app</p>
                         <div class="work__content-bottom">
                             <a href="#" class="work__title">Project title</a>
                             <time datetime="2018-11-22 19:00" class="work__date">2018</time>
@@ -88,13 +88,13 @@ title: portfolio
                 </div>
             </div>
             <!--/portfolio__col-->
-            <div class="portfolio__col">
-                <div class="work">
+            <div class="portfolio__col" data-cat="website">
+                <div data-modal="#modalProject2" class="work">
                     <a href="#" class="work__img">
-                        <img src="https://place-hold.it/370x300" alt="portfolio img">
+                        <img src="assets/images/project3.jpg" alt="portfolio img">
                     </a>
                     <div class="work__content">
-                        <p class="work__cat">Category</p>
+                        <p class="work__cat">Category website</p>
                         <div class="work__content-bottom">
                             <a href="#" class="work__title">Project title</a>
                             <time datetime="2018-11-22 19:00" class="work__date">2018</time>
@@ -103,13 +103,13 @@ title: portfolio
                 </div>
             </div>
             <!--/portfolio__col-->
-            <div class="portfolio__col">
-                <div class="work">
+            <div class="portfolio__col" data-cat="interaction">
+                <div data-modal="#modalProject1" class="work">
                     <a href="#" class="work__img">
-                        <img src="https://place-hold.it/370x300" alt="portfolio img">
+                        <img src="assets/images/project4.jpg" alt="portfolio img">
                     </a>
                     <div class="work__content">
-                        <p class="work__cat">Category</p>
+                        <p class="work__cat">Category interaction</p>
                         <div class="work__content-bottom">
                             <a href="#" class="work__title">Project title</a>
                             <time datetime="2018-11-22 19:00" class="work__date">2018</time>
@@ -118,13 +118,13 @@ title: portfolio
                 </div>
             </div>
             <!--/portfolio__col-->
-            <div class="portfolio__col">
-                <div class="work">
+            <div class="portfolio__col" data-cat="interaction">
+                <div data-modal="#modalProject1" class="work">
                     <a href="#" class="work__img">
-                        <img src="https://place-hold.it/370x300" alt="portfolio img">
+                        <img src="assets/images/project5.jpg" alt="portfolio img">
                     </a>
                     <div class="work__content">
-                        <p class="work__cat">Category</p>
+                        <p class="work__cat">Category interaction</p>
                         <div class="work__content-bottom">
                             <a href="#" class="work__title">Project title</a>
                             <time datetime="2018-11-22 19:00" class="work__date">2018</time>
@@ -133,13 +133,13 @@ title: portfolio
                 </div>
             </div>
             <!--/portfolio__col-->
-            <div class="portfolio__col">
-                <div class="work">
+            <div class="portfolio__col" data-cat="website">
+                <div data-modal="#modalProject1" class="work">
                     <a href="#" class="work__img">
-                        <img src="https://place-hold.it/370x300" alt="portfolio img">
+                        <img src="assets/images/project1.jpg" alt="portfolio img">
                     </a>
                     <div class="work__content">
-                        <p class="work__cat">Category</p>
+                        <p class="work__cat">Category website</p>
                         <div class="work__content-bottom">
                             <a href="#" class="work__title">Project title</a>
                             <time datetime="2018-11-22 19:00" class="work__date">2018</time>
@@ -148,13 +148,13 @@ title: portfolio
                 </div>
             </div>
             <!--/portfolio__col-->
-            <div class="portfolio__col">
-                <div class="work">
+            <div class="portfolio__col" data-cat="website">
+                <div data-modal="#modalProject1" class="work">
                     <a href="#" class="work__img">
-                        <img src="https://place-hold.it/370x300" alt="portfolio img">
+                        <img src="assets/images/project3.jpg" alt="portfolio img">
                     </a>
                     <div class="work__content">
-                        <p class="work__cat">Category</p>
+                        <p class="work__cat">Category website</p>
                         <div class="work__content-bottom">
                             <a href="#" class="work__title">Project title</a>
                             <time datetime="2018-11-22 19:00" class="work__date">2018</time>
@@ -163,13 +163,13 @@ title: portfolio
                 </div>
             </div>
             <!--/portfolio__col-->
-            <div class="portfolio__col">
-                <div class="work">
+            <div class="portfolio__col" data-cat="app">
+                <div data-modal="#modalProject1" class="work">
                     <a href="#" class="work__img">
-                        <img src="https://place-hold.it/370x300" alt="portfolio img">
+                        <img src="assets/images/project2.jpg" alt="portfolio img">
                     </a>
                     <div class="work__content">
-                        <p class="work__cat">Category</p>
+                        <p class="work__cat">Category app</p>
                         <div class="work__content-bottom">
                             <a href="#" class="work__title">Project title</a>
                             <time datetime="2018-11-22 19:00" class="work__date">2018</time>
@@ -178,13 +178,13 @@ title: portfolio
                 </div>
             </div>
             <!--/portfolio__col-->
-            <div class="portfolio__col">
-                <div class="work">
+            <div class="portfolio__col" data-cat="interaction">
+                <div data-modal="#modalProject1" class="work">
                     <a href="#" class="work__img">
-                        <img src="https://place-hold.it/370x300" alt="portfolio img">
+                        <img src="assets/images/project4.jpg" alt="portfolio img">
                     </a>
                     <div class="work__content">
-                        <p class="work__cat">Category</p>
+                        <p class="work__cat">Category interaction</p>
                         <div class="work__content-bottom">
                             <a href="#" class="work__title">Project title</a>
                             <time datetime="2018-11-22 19:00" class="work__date">2018</time>
@@ -219,8 +219,8 @@ title: portfolio
                 </div>
                 <!--/about__text-->
                 <div class="about__actions">
-                    <a class="btn btn--default btn--transparent-gray" href="#">Hire Me</a>
-                    <a class="btn btn--default btn--transparent-gray" href="#">See My Resume</a>
+                    <a class="btn btn--default btn--transparent-gray" href="#" data-modal="#modalHireMe">Hire Me</a>
+                    <a class="btn btn--default btn--transparent-gray" href="#" data-modal="#modalResume">See My Resume</a>
                 </div>
                 <!--/intro__actions-->
             </div>

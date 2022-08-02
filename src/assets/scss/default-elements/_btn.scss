@@ -15,20 +15,6 @@
     font-weight: 700;
   }
 
-  &--smallest {
-    min-width: 14.7rem;
-    font-size: 1.2rem;
-    line-height: 1;
-    letter-spacing: 0.6px;
-    padding: 1em;
-    border-radius: 1.43em;
-    font-weight: 400;
-
-    & + & {
-      margin-left: 1.4rem;
-    }
-  }
-
   &--transparent {
     color: $black;
     border: 2px solid $black;
@@ -47,6 +33,28 @@
     font-size: 1.6rem;
     font-weight: 400;
     border-radius: 1.6em;
+
+    @include tablet {
+      min-width: 15rem;
+    }
+
+    @include mobile {
+      padding: .9em;
+    }
+  }
+
+  &--smallest {
+    min-width: 14.7rem;
+    font-size: 1.2rem;
+    line-height: 1;
+    letter-spacing: 0.6px;
+    padding: 1em;
+    border-radius: 1.43em;
+    font-weight: 400;
+
+    & + & {
+      margin-left: 1.4rem;
+    }
   }
 
   &--black {

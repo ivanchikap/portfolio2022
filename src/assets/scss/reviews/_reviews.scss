@@ -3,10 +3,30 @@
   background: #332f30 url("../images/reviews-bg.jpg") no-repeat center / cover;
   padding: 6.8rem 0;
 
+  @include tablet {
+    padding: 5.8rem 0;
+  }
+
+  @include mobile-large {
+    padding: 4rem 0 5rem 0;
+  }
+
+  @include mobile {
+    padding: 3rem 0 4.4rem 0;
+  }
+
   &__item {
     width: 100%;
     max-width: 70%;
     margin: 0 auto;
+
+    @include mobile-large {
+      max-width: 90%;
+    }
+
+    @include mobile {
+      max-width: 98%;
+    }
   }
 
   &__text {

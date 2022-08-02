@@ -1,0 +1,47 @@
+.form {
+
+  &__control {
+    & + & {
+      margin-top: 2.7rem;
+    }
+  }
+
+  &__label {
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+  }
+
+  &__element {
+    display: block;
+    padding: 2rem 2.6rem;
+    width: 100%;
+    border-radius: 27px;
+    border: 1px solid rgba(#707070, .3);
+    color: $black;
+    font-size: 1.2rem;
+    transition: border .1s linear;
+
+    &:focus {
+      border-color: $gray;
+    }
+
+    &::placeholder {
+      font-weight: 300;
+    }
+
+    &--textarea {
+      min-height: 20.2rem;
+    }
+  }
+  
+  &__btn {
+    margin-top: 3rem;
+    text-align: right;
+  }
+
+  &__submit {
+
+  }
+}

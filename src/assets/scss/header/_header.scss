@@ -1,7 +1,19 @@
 .header {
   padding: 1.8rem 0;
 
+  @include tablet {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    background-color: #fff;
+    box-shadow: 8px 0 8px rgba($black, .8);
+    padding: 1rem 0;
+  }
+
   &__inner {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
