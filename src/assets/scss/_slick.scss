@@ -111,6 +111,10 @@
     width: 100%;
     padding: 0.5rem;
 
+    @include mobile-large {
+        bottom: 0;
+    }
+
     li {
         cursor: pointer;
         width: 11px;

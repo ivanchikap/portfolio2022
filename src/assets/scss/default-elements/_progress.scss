@@ -16,6 +16,11 @@
     font-weight: 300;
     padding-right: 1.9rem;
     @extend .text-overflow;
+
+    @include mobile-large {
+      padding-right: 0.6rem;
+      width: 52%;
+    }
   }
 
   &__bar {
@@ -23,6 +28,9 @@
     width: 13.9rem;
     height: .6rem;
     background-color: #efefef;
+    @include mobile-large {
+      width: 48%;
+    }
   }
 
   &__bar-value {

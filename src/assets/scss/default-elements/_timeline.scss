@@ -1,18 +1,52 @@
 .timeline {
   display: flex;
+  flex-wrap: wrap;
   margin: 7rem auto;
   width: 100%;
   max-width: 76.8rem;
+
+  @include tablet {
+    margin: 5rem auto;
+  }
+
+  @include mobile-large {
+    margin: 3rem auto;
+  }
 
   &__col {
     width: 50%;
     text-align: right;
     padding-right: 4.7rem;
+
+    @include mobile-large {
+      padding-right: 2rem;
+    }
+
+    @include mobile {
+      width: 100%;
+      text-align: left;
+      padding-right: 0;
+
+      & + & {
+        margin-top: 1.4rem;
+      }
+    }
     
     &:last-child {
       text-align: left;
       padding-left: 4.7rem;
       border-left: 1px solid $gray;
+
+      @include mobile-large {
+        padding-left: 2rem;
+      }
+
+      @include mobile {
+        padding-left: 0;
+        padding-top: 1.4rem;
+        border-top: 1px solid $gray;
+        border-left: none;
+      }
     }
   }
 
@@ -22,11 +56,26 @@
     letter-spacing: 0.9px;
     text-transform: uppercase;
     margin-bottom: 3.8rem;
+
+    @include tablet {
+      margin-bottom: 2.6rem;
+    }
+    @include mobile-large {
+      margin-bottom: 1.6rem;
+    }
   }
 
   &__item {
     & + & {
       margin-top: 3.8rem;
+
+      @include tablet {
+        margin-top: 2.6rem;
+      }
+
+      @include mobile-large {
+        margin-top: 1.8rem;
+      }
     }
   }
 
@@ -36,6 +85,10 @@
     line-height: 1.57;
     text-decoration: underline;
     margin-bottom: 1.3rem;
+
+    @include mobile-large {
+      margin-bottom: 1rem;
+    }
   }
 
   &__subtitle {

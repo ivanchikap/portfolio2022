@@ -24,6 +24,10 @@
     transform: rotateX(90deg);
     transition: transform .2s linear;
 
+    @include mobile-large {
+      max-height: 94vh;
+    }
+
     &--sm {
       max-width: 90rem;
     }
@@ -42,10 +46,36 @@
       color: #000;
       transform: translateY(-0.2rem);
     }
+
+    @include tablet {
+      font-size: 3rem;
+      top: .6rem;
+      right: .6rem;
+    }
+
+    @include mobile {
+      font-size: 2.6rem;
+    }
   }
 
   &__content {
     padding: 7.5rem 1.5rem;
+
+    @include laptop {
+      padding: 6.5rem 1.5rem;
+    }
+
+    @include tablet {
+      padding: 5rem 1.5rem;
+    }
+
+    @include mobile-large {
+      padding: 3rem 1.5rem;
+    }
+
+    @include mobile {
+      padding: 2.4rem 1rem;
+    }
   }
 
   &__title {
@@ -59,6 +89,21 @@
       text-align: left;
       margin-bottom: 0.2rem;
     }
+
+    @include tablet {
+      font-size: 4rem;
+      margin-bottom: 3rem;
+    }
+
+    @include mobile-large {
+      font-size: 3.2rem;
+      margin-bottom: 2.4rem;
+    }
+
+    @include mobile {
+      font-size: 3rem;
+      margin-bottom: 2rem;
+    }
   }
 
   &__subtitle {
@@ -68,5 +113,15 @@
   
   &__buttons {
     text-align: center;
+
+    .btn + .btn {
+      margin-left: 1.4rem;
+    }
+
+    .btn--smallest:last-child {
+      @include mobile {
+        display: none;
+      }
+    }
   }
 }
